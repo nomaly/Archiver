@@ -47,7 +47,7 @@ namespace Archiver
                         var result = resultStream.ToArray();
 
                         if (result.Length == 0)
-                            throw new ArgumentException("compressedBytes cannot be decompressed because it was not been compressed by GZip");
+                            throw new ArgumentException("compressedBytes cannot be decompressed because it was not compressed by GZip");
 
                         return result;
                     }
